@@ -4,3 +4,94 @@
 body {
 	font-size: 62.5%;
 }
+
+$header-width: 50px;
+$aside-width: 210px;
+$trends-height: 350px;
+
+header {
+    position: fixed;
+    width: 100%;
+    height: $header-width;
+    background-color: black; 
+    z-index: 999;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    padding-top: $header-width;
+    background-color: pink;
+}
+
+.left_container {
+    position: absolute;
+    float: left;
+    width: $aside-width; 
+    top: 0px;
+    bottom: 0px;
+    background-color: blue;
+}
+
+.middle_container {
+    height: 2000px;
+    left: $aside-width;
+    right: $aside-width;
+    background-color: black;
+}
+
+.right_container {
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: $aside-width;
+    background-color: blue;
+}
+
+.trends {
+    width: 100%;
+    height: $trends-height;
+    background-color: yellow;
+}
+
+.follow {
+    position: absolute;
+    width: 100%;
+    top: $trends-height; 
+    bottom: 0;
+    background-color: grey;
+}
+
+
+@media screen and (min-width: 800px) {
+    header { background-color: red; }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    header { background-color: yellow; }
+    .main {
+        padding-right: 0px;
+    }
+
+    .middle_container {
+    }  
+    
+    .left_container {
+        height: 600px;
+    }
+
+    .right_container {
+        top: 600px;
+        bottom: 0;
+        left: 0;
+        .trends { display: none; }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header { background-color: blue; }
+    .left_container { display: none; }
+    .right_container { display: none; }
+}
