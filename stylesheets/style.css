@@ -88,7 +88,7 @@ header p {
 .main {
   position: relative;
   width: 100%;
-  padding-top: 50px;
+  top: 50px;
   background-color: pink;
 }
 
@@ -96,7 +96,7 @@ header p {
 .left_container {
   position: absolute;
   float: left;
-  width: 210px;
+  width: 300px;
   top: 0px;
   bottom: 0px;
   background-color: blue;
@@ -104,8 +104,8 @@ header p {
 
 /* line 44, ../sass/style.scss */
 .middle_container {
-  margin-left: 210px;
-  margin-right: 210px;
+  margin-left: 300px;
+  margin-right: 300px;
   background-color: #f2eee8;
   padding: 40px;
 }
@@ -270,7 +270,7 @@ header p {
   top: 0;
   right: 0;
   bottom: 0;
-  width: 210px;
+  width: 300px;
   background-color: blue;
 }
 
@@ -278,74 +278,148 @@ header p {
 .trends {
   width: 100%;
   height: 350px;
-  background-color: yellow;
+  box-sizing: border-box;
+  background-color: #FFFBF5;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 158, ../sass/style.scss */
+.trends h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* line 159, ../sass/style.scss */
+.trends ul {
+  font-size: 18px;
+  line-height: 20px;
+  color: #80A8CC;
 }
 
-/* line 155, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .follow {
   position: absolute;
+  box-sizing: border-box;
   width: 100%;
   top: 350px;
   bottom: 0;
-  background-color: grey;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #FFFBF5;
+}
+/* line 173, ../sass/style.scss */
+.follow div {
+  float: right;
+  font-size: 20px;
+  color: #80A8CC;
+}
+/* line 174, ../sass/style.scss */
+.follow h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* line 176, ../sass/style.scss */
+.follow li {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+}
+/* line 180, ../sass/style.scss */
+.follow li .follow_image_container {
+  float: left;
+  height: 100%;
+  width: 60px;
+  background-image: url("../assets/p1.jpg");
+  background-size: cover;
+  border-radius: 30px;
+}
+/* line 189, ../sass/style.scss */
+.follow li .follow_person_container {
+  float: left;
+  height: 100%;
+  margin-left: 10px;
+  width: 170px;
+  font-size: 15px;
+}
+/* line 195, ../sass/style.scss */
+.follow li .follow_person_container a {
+  float: right;
+  box-sizing: border-box;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid black;
+  color: black;
+}
+/* line 196, ../sass/style.scss */
+.follow li .follow_person_container p {
+  line-height: 30px;
+  color: #D0CBBE;
+}
+/* line 197, ../sass/style.scss */
+.follow li .follow_person_container p:nth-of-type(1) {
+  color: black;
 }
 
 @media screen and (min-width: 800px) {
-  /* line 165, ../sass/style.scss */
+  /* line 204, ../sass/style.scss */
   header {
     background-color: red;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 800px) {
-  /* line 169, ../sass/style.scss */
+  /* line 208, ../sass/style.scss */
   header {
     background-color: yellow;
   }
 
-  /* line 170, ../sass/style.scss */
+  /* line 209, ../sass/style.scss */
   .main {
     padding-right: 0px;
   }
 
-  /* line 174, ../sass/style.scss */
+  /* line 213, ../sass/style.scss */
   .middle_container {
     margin-right: 0px;
     padding-right: 0px;
   }
 
-  /* line 179, ../sass/style.scss */
+  /* line 218, ../sass/style.scss */
   .left_container {
-    height: 600px;
+    height: 450px;
   }
 
-  /* line 183, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   .right_container {
-    top: 600px;
+    top: 450px;
     bottom: 0;
     left: 0;
   }
-  /* line 187, ../sass/style.scss */
+  /* line 226, ../sass/style.scss */
   .right_container .trends {
     display: none;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 192, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   header {
     background-color: blue;
   }
 
-  /* line 193, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   .left_container {
     display: none;
   }
 
-  /* line 194, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   .right_container {
     display: none;
   }
 
-  /* line 195, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   .middle_container {
     margin-left: 0px;
     margin-right: 0px;
@@ -353,7 +427,7 @@ header p {
     padding-right: 0px;
   }
 
-  /* line 198, ../sass/style.scss */
+  /* line 237, ../sass/style.scss */
   .statistic_container li {
     float: none;
     width: 100%;
