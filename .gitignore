@@ -1,3 +1,4 @@
 .sass-cache/
 .gitignore
 Gemfile.lock
+assets/.DS_Store

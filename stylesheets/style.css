@@ -68,7 +68,7 @@ body {
   font-size: 62.5%;
 }
 
-/* line 13, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 header {
   position: fixed;
   width: 100%;
@@ -77,7 +77,7 @@ header {
   z-index: 999;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .main {
   position: relative;
   width: 100%;
@@ -85,7 +85,7 @@ header {
   background-color: pink;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .left_container {
   position: absolute;
   float: left;
@@ -95,35 +95,98 @@ header {
   background-color: blue;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .middle_container {
-  height: 2000px;
+  height: 1000px;
   margin-left: 210px;
   margin-right: 210px;
   background-color: #f2eee8;
   padding: 40px;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .statistic_container {
   width: 100%;
-  height: 80px;
-  background-color: red;
 }
-/* line 49, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 .statistic_container li {
   float: left;
   box-sizing: border-box;
   width: 25%;
-  height: 100%;
-  background-color: black;
+  height: 80px;
+  padding-top: 20px;
+  background-color: white;
 }
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
+.statistic_container li p {
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
+/* line 59, ../sass/style.scss */
+.statistic_container li p:nth-child(1) {
+  color: #D0CBBE;
+}
+/* line 60, ../sass/style.scss */
+.statistic_container li p:nth-child(2) {
+  font-weight: bold;
+}
+/* line 65, ../sass/style.scss */
+.statistic_container li:hover {
+  border-bottom-width: 5px;
+  border-bottom-color: #80A8CC;
+  border-bottom-style: solid;
+}
+/* line 71, ../sass/style.scss */
 .statistic_container li:nth-child(1) {
+  border-bottom-width: 5px;
+  border-bottom-color: #80A8CC;
+  border-bottom-style: solid;
+}
+
+/* line 78, ../sass/style.scss */
+.content_container {
+  margin-top: 40px;
+}
+/* line 80, ../sass/style.scss */
+.content_container li {
+  padding: 30px;
+  background-color: white;
+}
+/* line 83, ../sass/style.scss */
+.content_container li .image_container {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-image: url("../assets/p0.jpg");
+  background-size: cover;
+  border-radius: 25px;
+}
+/* line 92, ../sass/style.scss */
+.content_container li .item_container {
+  margin-left: 60px;
+  background-color: yellow;
+}
+/* line 95, ../sass/style.scss */
+.content_container li .item_container .name_container {
+  width: 100%;
+  height: 20px;
+  background-color: red;
+}
+/* line 100, ../sass/style.scss */
+.content_container li .item_container p {
+  padding: 10px 0px;
+  font-size: 18px;
+  line-height: 25px;
+}
+/* line 101, ../sass/style.scss */
+.content_container li .item_container .reply_container {
+  width: 100%;
+  height: 20px;
   background-color: red;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .right_container {
   position: absolute;
   float: right;
@@ -134,14 +197,14 @@ header {
   background-color: blue;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .trends {
   width: 100%;
   height: 350px;
   background-color: yellow;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .follow {
   position: absolute;
   width: 100%;
@@ -151,61 +214,61 @@ header {
 }
 
 @media screen and (min-width: 800px) {
-  /* line 88, ../sass/style.scss */
+  /* line 136, ../sass/style.scss */
   header {
     background-color: red;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 800px) {
-  /* line 92, ../sass/style.scss */
+  /* line 140, ../sass/style.scss */
   header {
     background-color: yellow;
   }
 
-  /* line 93, ../sass/style.scss */
+  /* line 141, ../sass/style.scss */
   .main {
     padding-right: 0px;
   }
 
-  /* line 97, ../sass/style.scss */
+  /* line 145, ../sass/style.scss */
   .middle_container {
     margin-right: 0px;
     padding-right: 0px;
   }
 
-  /* line 102, ../sass/style.scss */
+  /* line 150, ../sass/style.scss */
   .left_container {
     height: 600px;
   }
 
-  /* line 106, ../sass/style.scss */
+  /* line 154, ../sass/style.scss */
   .right_container {
     top: 600px;
     bottom: 0;
     left: 0;
   }
-  /* line 110, ../sass/style.scss */
+  /* line 158, ../sass/style.scss */
   .right_container .trends {
     display: none;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 115, ../sass/style.scss */
+  /* line 163, ../sass/style.scss */
   header {
     background-color: blue;
   }
 
-  /* line 116, ../sass/style.scss */
+  /* line 164, ../sass/style.scss */
   .left_container {
     display: none;
   }
 
-  /* line 117, ../sass/style.scss */
+  /* line 165, ../sass/style.scss */
   .right_container {
     display: none;
   }
 
-  /* line 118, ../sass/style.scss */
+  /* line 166, ../sass/style.scss */
   .middle_container {
     margin-left: 0px;
     margin-right: 0px;
@@ -213,8 +276,9 @@ header {
     padding-right: 0px;
   }
 
-  /* line 120, ../sass/style.scss */
-  .statistic_container ul li {
+  /* line 169, ../sass/style.scss */
+  .statistic_container li {
     float: none;
+    width: 100%;
   }
 }
