@@ -21,6 +21,8 @@ header {
     height: $header-width;
     background-color: black; 
     z-index: 999;
+
+    p { text-align: center; line-height : $header-width; font-size: $header-width / 2; color: $bgd_color_blue;}
 }
 
 .main {
