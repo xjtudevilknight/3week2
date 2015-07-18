@@ -83,3 +83,6 @@
 	content: "\e607";
 }
 
+.fa-dotted:before {
+    content: "...";
+}
