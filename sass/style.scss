@@ -3,11 +3,11 @@
 
 body {
 	font-size: 62.5%;
+    font-family: Arial;
 }
 
 $header-width : 50px;
 $aside-width : 300px;
-$trends-height : 350px;
 $middle_padding : 40px;
 $middle_height : 1000px;
 $bgd_color_blue : #80A8CC;
@@ -38,7 +38,87 @@ header {
     width: $aside-width; 
     top: 0px;
     bottom: 0px;
-    background-color: blue;
+    background-color: $bgd_color_blue;
+
+    .left_person_container {
+        box-sizing: border-box;
+        width: 100%;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        .left_image_container {
+            width: 100px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("../assets/p4.jpg"); 
+            background-size: cover;
+            border-radius: 50px;
+        } 
+        .left_person_name {
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 18px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .left_person_introduction {
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            line-height: 20px;
+        }
+        
+        .left_person_link {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+
+            i { margin-right: 5px; }
+        }
+
+        button {
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            border-width: 0px;
+            font-size: 20px;
+            color: white;
+        }
+
+        
+    }
+    ul.images_container {
+        width: 100%;
+        height: 300px;
+        li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-image: url("../assets/p5.jpg");
+            background-size: cover;
+        }
+
+        li:nth-child(2n) { background-image: url("../assets/p8.jpg"); }
+    }
+
+    .left-activity-container {
+        padding: 20px;
+        h2 { font-size: 20px; color: white; }
+        li { 
+            line-height: 20px; 
+            i { margin-right: 5px }
+            span { color: #6D95D6; padding-right: 5px;}
+            a { color: white; }
+        }
+    }
 }
 
 .middle_container {
@@ -143,31 +223,30 @@ header {
     right: 0;
     bottom: 0;
     width: $aside-width;
-    background-color: blue;
+    background-color: $bgd_color_grey;
 }
 
 .trends {
     width: 100%;
-    height: $trends-height;
     box-sizing: border-box;
     background-color: $bgd_color_grey;
     padding-top: 50px;    
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 10px;
 
     h2 { font-size: 20px; margin-bottom: 20px; }
     ul { font-size: 18px; line-height: 20px; color: $bgd_color_blue; }
 }
 
 .follow {
-    position: absolute;
     box-sizing: border-box;
     width: 100%;
-    top: $trends-height; 
     bottom: 0;
-    padding-top: 50px;    
+    padding-top: 20px;    
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
     background-color: $bgd_color_grey;
 
     div { float: right; font-size: 20px; color: $bgd_color_blue; }
@@ -175,15 +254,15 @@ header {
     
     li {
         width: 100%;
-        height: 60px;
-        margin-bottom: 20px;
+        height: 40px;
+        margin-bottom: 10px;
         .follow_image_container {
             float: left;
             height: 100%;
-            width: 60px;
+            width: 40px;
             background-image: url("../assets/p1.jpg");
             background-size: cover;
-            border-radius: 30px;
+            border-radius: 20px;
         }
 
         .follow_person_container {
@@ -191,9 +270,9 @@ header {
             height: 100%;
             margin-left: 10px;
             width: 170px;
-            font-size: 15px;
-            a { float: right; box-sizing: border-box; display: block; height: 30px; line-height: 30px; width: 30px; text-align: center; border: 1px solid black;  color: black; }
-            p { line-height: 30px;  color: $font_color_grey; }
+            font-size: 12px;
+            a { float: right; box-sizing: border-box; display: block; height: 20px; line-height: 20px; width: 20px; text-align: center; border: 1px solid black;  color: black; }
+            p { line-height: 20px;  color: $font_color_grey; }
             p:nth-of-type(1) { color: black; }
         }
     } 
@@ -208,6 +287,7 @@ header {
     header { background-color: yellow; }
     .main {
         padding-right: 0px;
+        background-color: $bgd_color_blue;
     }
 
     .middle_container {
@@ -216,14 +296,15 @@ header {
     }  
     
     .left_container {
-        height: 450px;
+        height: 650px;
     }
 
     .right_container {
-        top: 450px;
+        top: 950px;
         bottom: 0;
         left: 0;
         .trends { display: none; }
+        .follow { position: static; }
     }
 }
 
