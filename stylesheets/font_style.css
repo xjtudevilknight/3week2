@@ -86,3 +86,11 @@
 .fa-dotted:before {
     content: "...";
 }
+
+.fa-hash:before {
+    content: "#";
+}
+
+.fa-leaf:before {
+    content: "\f06c";
+}
