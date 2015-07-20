@@ -19,12 +19,12 @@ body {
     font-family: Arial;
 }
 
-$header-width : 50px;
+$header-width : 80px;
 $aside-width : 300px;
 $middle_padding : 40px;
 $middle_height : 1000px;
 $bgd_color_blue : #80A8CC;
-$bgd_color_grey : #FFFBF5;
+$bgd_color_grey : white;
 $font_color_grey : #D0CBBE;
 $name_container_height : 20px;
 
@@ -41,57 +41,58 @@ header {
         li {
             float: left;
             box-sizing: border-box;
-            width: $header-width;
-            margin-left: 20px;
-            padding: 10px;
+            width: 70px;
+            padding: 18px 5px;
             height: 100%;
             a {
                 display: block;
+                box-sizing: border-box;
                 height: 100%;
-                width: 30px;
+                width: 42px;
+                margin-left: 8px;
                 text-align: center;
-                line-height: 30px; 
-                font-size: 12px;
-                border-radius: 15px;
-                border: 1px solid grey;
+                line-height: 42px; 
+                font-size: 15px;
+                border-radius: 21px;
+                border: 1px solid #e6e6e6;
             } 
         }
     }
     li:nth-child(1) a { background-color: $bgd_color_blue; color: white; }
-    li:nth-child(1) { border-right: 1px solid grey; }
+    li:nth-child(1) { border-right: 1px solid #e6e6e6; }
 
     .header-right-container {
         position: absolute;
         box-sizing: border-box;
         right: 0;
-        padding: 10px;
+        padding: 18px 10px;
         height: 100%;
         width: 300px;
 
         .header-image-container {
             float: right;
-            height: 30px;
-            width: 30px;
+            height: 44px;
+            width: 44px;
             margin-right: 10px;
             background-image: url("../assets/p9.jpg");
             background-size: cover;
-            border-radius: 15px;
+            border-radius: 22px;
         }
 
         form {
             float: right;
             padding-right: 20px;
-            height: 30px;
+            height: 44px;
             input {
                 float: left;
                 box-sizing: border-box;
-                height: 30px;
+                height: 44px;
                 width: 150px;
                 border: 0px;
                 padding: 0px;
                 margin: 0px;
-                border-top-left-radius: 15px;
-                border-bottom-left-radius: 15px;
+                border-top-left-radius: 22px;
+                border-bottom-left-radius: 22px;
                 border-width: 1px 0px 1px 1px;
                 border-color: black;
                 border-style: solid;
@@ -100,13 +101,13 @@ header {
             button {
                 float: left;
                 box-sizing: border-box;
-                height: 30px;
+                height: 44px;
                 width: 45px;
                 border: 0px;
                 padding: 0px;
                 margin: 0px;
-                border-top-right-radius: 15px;
-                border-bottom-right-radius: 15px;
+                border-top-right-radius: 22px;
+                border-bottom-right-radius: 22px;
                 border-width: 1px 1px 1px 0px;
                 border-color: black;
                 border-style: solid;
@@ -179,11 +180,12 @@ header {
             margin-left: auto;
             margin-right: auto;
             width: 150px;
-            height: 50px;
+            height: 40px;
             border-radius: 25px;
             border-width: 0px;
-            font-size: 20px;
+            font-size: 15px;
             color: white;
+            background-color: rgb(109, 149, 182);
         }
 
         
@@ -204,11 +206,14 @@ header {
 
     .left-activity-container {
         padding: 20px;
-        h2 { font-size: 20px; color: white; }
+        margin-bottom: 20px;
+        h2 { font-size: 20px; color: white; margin-bottom: 10px; }
         li { 
             line-height: 20px; 
-            i { margin-right: 5px }
-            span { color: #6D95D6; padding-right: 5px;}
+            font-size: 12px;
+            color: rgb(109, 149, 182);
+            i { margin-right: 5px; margin-left: 15px; }
+            span {  padding-right: 5px;}
             a { color: white; }
         }
     }
@@ -276,7 +281,7 @@ header {
                     strong { color: black; }
                 }
             }
-            p { padding: 10px 0px; font-size: 18px; } 
+            p { padding: 10px 0px; font-size: 15px; line-height: 20px; } 
             video { width: 100% }
             .reply_container {
                 width: 100%;
@@ -329,7 +334,7 @@ header {
     padding-bottom: 10px;
 
     h2 { font-size: 20px; margin-bottom: 20px; }
-    ul { font-size: 18px; line-height: 20px; color: $bgd_color_blue; }
+    ul { font-size: 15px; line-height: 25px; color: $bgd_color_blue; }
 }
 
 .follow {
@@ -364,11 +369,17 @@ header {
             margin-left: 10px;
             width: 170px;
             font-size: 12px;
-            a { float: right; box-sizing: border-box; display: block; height: 20px; line-height: 20px; width: 20px; text-align: center; border: 1px solid black;  color: black; }
+            a { float: right; box-sizing: border-box; display: block; height: 20px; line-height: 20px; width: 20px; text-align: center; border: 1px solid #d9d9d9;  color: #999999; }
             p { line-height: 20px;  color: $font_color_grey; }
             p:nth-of-type(1) { color: black; }
         }
     } 
+
+    li:nth-child(1) .follow_image_container { background-image: url("../assets/p2.jpg"); }
+    li:nth-child(2) .follow_image_container { background-image: url("../assets/p3.jpg"); }
+    li:nth-child(3) .follow_image_container { background-image: url("../assets/p4.jpg"); }
+    li:nth-child(4) .follow_image_container { background-image: url("../assets/p5.jpg"); }
+    li:nth-child(5) .follow_image_container { background-image: url("../assets/p6.jpg"); }
 }
 
 
@@ -376,7 +387,7 @@ header {
     header { background-color: $bgd_color_grey; }
 }
 
-@media screen and (min-width: 500px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 900px) {
     header { background-color: $bgd_color_grey; }
     .main {
         padding-right: 0px;
@@ -393,7 +404,7 @@ header {
     }
 
     .right_container {
-        top: 950px;
+        top: 970px;
         bottom: 0;
         left: 0;
         .trends { display: none; }

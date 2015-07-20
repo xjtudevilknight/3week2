@@ -105,7 +105,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 80px;
   border-bottom: 1px solid grey;
   z-index: 999;
 }
@@ -118,104 +118,105 @@ header ul {
 header ul li {
   float: left;
   box-sizing: border-box;
-  width: 50px;
-  margin-left: 20px;
-  padding: 10px;
+  width: 70px;
+  padding: 18px 5px;
   height: 100%;
 }
-/* line 48, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 header ul li a {
   display: block;
+  box-sizing: border-box;
   height: 100%;
-  width: 30px;
+  width: 42px;
+  margin-left: 8px;
   text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  border-radius: 15px;
-  border: 1px solid grey;
+  line-height: 42px;
+  font-size: 15px;
+  border-radius: 21px;
+  border: 1px solid #e6e6e6;
 }
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 header li:nth-child(1) a {
   background-color: #80A8CC;
   color: white;
 }
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 header li:nth-child(1) {
-  border-right: 1px solid grey;
+  border-right: 1px solid #e6e6e6;
 }
-/* line 63, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 header .header-right-container {
   position: absolute;
   box-sizing: border-box;
   right: 0;
-  padding: 10px;
+  padding: 18px 10px;
   height: 100%;
   width: 300px;
 }
-/* line 71, ../sass/style.scss */
+/* line 72, ../sass/style.scss */
 header .header-right-container .header-image-container {
   float: right;
-  height: 30px;
-  width: 30px;
+  height: 44px;
+  width: 44px;
   margin-right: 10px;
   background-image: url("../assets/p9.jpg");
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 22px;
 }
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 header .header-right-container form {
   float: right;
   padding-right: 20px;
-  height: 30px;
+  height: 44px;
 }
-/* line 85, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 header .header-right-container form input {
   float: left;
   box-sizing: border-box;
-  height: 30px;
+  height: 44px;
   width: 150px;
   border: 0px;
   padding: 0px;
   margin: 0px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
   border-width: 1px 0px 1px 1px;
   border-color: black;
   border-style: solid;
 }
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 header .header-right-container form button {
   float: left;
   box-sizing: border-box;
-  height: 30px;
+  height: 44px;
   width: 45px;
   border: 0px;
   padding: 0px;
   margin: 0px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
   border-width: 1px 1px 1px 0px;
   border-color: black;
   border-style: solid;
   background-color: white;
 }
-/* line 118, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 header p {
   text-align: center;
-  line-height: 50px;
-  font-size: 25px;
+  line-height: 80px;
+  font-size: 40px;
   color: #80A8CC;
 }
 
-/* line 121, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .main {
   position: relative;
   width: 100%;
-  top: 50px;
+  top: 80px;
   background-color: pink;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .left_container {
   position: absolute;
   float: left;
@@ -224,7 +225,7 @@ header p {
   bottom: 0px;
   background-color: #80A8CC;
 }
-/* line 136, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .left_container .left_person_container {
   box-sizing: border-box;
   width: 100%;
@@ -233,7 +234,7 @@ header p {
   padding-right: 20px;
   padding-bottom: 30px;
 }
-/* line 143, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .left_container .left_person_container .left_image_container {
   width: 100px;
   height: 100px;
@@ -243,7 +244,7 @@ header p {
   background-size: cover;
   border-radius: 50px;
 }
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .left_container .left_person_container .left_person_name {
   color: white;
   margin-top: 20px;
@@ -251,43 +252,44 @@ header p {
   font-size: 20px;
   text-align: center;
 }
-/* line 160, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .left_container .left_person_container .left_person_introduction {
   color: white;
   font-size: 15px;
   text-align: center;
   line-height: 20px;
 }
-/* line 167, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .left_container .left_person_container .left_person_link {
   margin-top: 40px;
   text-align: center;
   font-size: 15px;
   color: white;
 }
-/* line 173, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .left_container .left_person_container .left_person_link i {
   margin-right: 5px;
 }
-/* line 176, ../sass/style.scss */
+/* line 177, ../sass/style.scss */
 .left_container .left_person_container button {
   display: block;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   width: 150px;
-  height: 50px;
+  height: 40px;
   border-radius: 25px;
   border-width: 0px;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
+  background-color: #6d95b6;
 }
-/* line 191, ../sass/style.scss */
+/* line 193, ../sass/style.scss */
 .left_container ul.images_container {
   width: 100%;
   height: 300px;
 }
-/* line 194, ../sass/style.scss */
+/* line 196, ../sass/style.scss */
 .left_container ul.images_container li {
   float: left;
   width: 100px;
@@ -295,38 +297,42 @@ header p {
   background-image: url("../assets/p5.jpg");
   background-size: cover;
 }
-/* line 202, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .left_container ul.images_container li:nth-child(2n) {
   background-image: url("../assets/p8.jpg");
 }
-/* line 205, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .left_container .left-activity-container {
   padding: 20px;
+  margin-bottom: 20px;
 }
-/* line 207, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .left_container .left-activity-container h2 {
   font-size: 20px;
   color: white;
-}
-/* line 208, ../sass/style.scss */
-.left_container .left-activity-container li {
-  line-height: 20px;
-}
-/* line 210, ../sass/style.scss */
-.left_container .left-activity-container li i {
-  margin-right: 5px;
+  margin-bottom: 10px;
 }
 /* line 211, ../sass/style.scss */
+.left_container .left-activity-container li {
+  line-height: 20px;
+  font-size: 12px;
+  color: #6d95b6;
+}
+/* line 215, ../sass/style.scss */
+.left_container .left-activity-container li i {
+  margin-right: 5px;
+  margin-left: 15px;
+}
+/* line 216, ../sass/style.scss */
 .left_container .left-activity-container li span {
-  color: #6D95D6;
   padding-right: 5px;
 }
-/* line 212, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .left_container .left-activity-container li a {
   color: white;
 }
 
-/* line 217, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 .middle_container {
   margin-left: 300px;
   margin-right: 300px;
@@ -334,11 +340,11 @@ header p {
   padding: 40px;
 }
 
-/* line 225, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .statistic_container {
   width: 100%;
 }
-/* line 227, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 .statistic_container li {
   float: left;
   box-sizing: border-box;
@@ -347,44 +353,44 @@ header p {
   padding-top: 20px;
   background-color: white;
 }
-/* line 234, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .statistic_container li p {
   text-align: center;
   line-height: 20px;
   font-size: 12px;
 }
-/* line 235, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .statistic_container li p:nth-child(1) {
   color: #D0CBBE;
 }
-/* line 236, ../sass/style.scss */
+/* line 241, ../sass/style.scss */
 .statistic_container li p:nth-child(2) {
   font-weight: bold;
 }
-/* line 241, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .statistic_container li:hover {
   border-bottom-width: 5px;
   border-bottom-color: #80A8CC;
   border-bottom-style: solid;
 }
-/* line 247, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .statistic_container li:nth-child(1) {
   border-bottom-width: 5px;
   border-bottom-color: #80A8CC;
   border-bottom-style: solid;
 }
 
-/* line 254, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .content_container {
   margin-top: 40px;
 }
-/* line 256, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .content_container li {
   padding: 30px;
   background-color: white;
   border-bottom: 1px solid grey;
 }
-/* line 260, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 .content_container li .image_container {
   float: left;
   width: 50px;
@@ -393,16 +399,16 @@ header p {
   background-size: cover;
   border-radius: 25px;
 }
-/* line 269, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .content_container li .item_container {
   margin-left: 60px;
 }
-/* line 271, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 .content_container li .item_container .name_container {
   width: 100%;
   height: 20px;
 }
-/* line 274, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .content_container li .item_container .name_container span {
   float: right;
   vertical-align: center;
@@ -410,44 +416,45 @@ header p {
   color: #D0CBBE;
   font-size: 14px;
 }
-/* line 275, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 .content_container li .item_container .name_container p {
   padding: 0px;
   font-size: 18px;
   color: #D0CBBE;
 }
-/* line 276, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .content_container li .item_container .name_container p strong {
   color: black;
 }
-/* line 279, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .content_container li .item_container p {
   padding: 10px 0px;
-  font-size: 18px;
+  font-size: 15px;
+  line-height: 20px;
 }
-/* line 280, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .content_container li .item_container video {
   width: 100%;
 }
-/* line 281, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .content_container li .item_container .reply_container {
   width: 100%;
   height: 20px;
 }
-/* line 285, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .content_container li .item_container .reply_container .expand_container {
   float: right;
   height: 20px;
   width: 16px;
 }
-/* line 290, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .content_container li .item_container .reply_container .expand_container a {
   display: block;
   padding-top: 2px;
   font-size: 16px;
   color: #CCCCCC;
 }
-/* line 293, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .content_container li .item_container .reply_container ul li {
   padding: 0px;
   border-width: 0px;
@@ -456,7 +463,7 @@ header p {
   font-size: 16px;
   height: 20px;
 }
-/* line 294, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .content_container li .item_container .reply_container ul li a {
   display: block;
   float: left;
@@ -464,17 +471,17 @@ header p {
   height: 20px;
   color: #999999;
 }
-/* line 295, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .content_container li .item_container .reply_container ul li span {
   line-height: 20px;
   color: #CCCCCC;
 }
-/* line 298, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .content_container li .item_container .reply_container ul li:last-child a {
   position: relative;
   top: -6px;
 }
-/* line 306, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .content_container li:nth-child(2) .name_container i {
   float: left;
   font-size: 16px;
@@ -482,12 +489,12 @@ header p {
   margin-right: 5px;
   color: blue;
 }
-/* line 307, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .content_container li:nth-child(2) .name_container p {
   float: left;
 }
 
-/* line 312, ../sass/style.scss */
+/* line 317, ../sass/style.scss */
 .right_container {
   position: absolute;
   float: right;
@@ -495,32 +502,32 @@ header p {
   right: 0;
   bottom: 0;
   width: 300px;
-  background-color: #FFFBF5;
+  background-color: white;
 }
 
-/* line 322, ../sass/style.scss */
+/* line 327, ../sass/style.scss */
 .trends {
   width: 100%;
   box-sizing: border-box;
-  background-color: #FFFBF5;
+  background-color: white;
   padding-top: 50px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 10px;
 }
-/* line 331, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .trends h2 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-/* line 332, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .trends ul {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 25px;
   color: #80A8CC;
 }
 
-/* line 335, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .follow {
   box-sizing: border-box;
   width: 100%;
@@ -529,26 +536,26 @@ header p {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
-  background-color: #FFFBF5;
+  background-color: white;
 }
-/* line 345, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .follow div {
   float: right;
   font-size: 20px;
   color: #80A8CC;
 }
-/* line 346, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .follow h2 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-/* line 348, ../sass/style.scss */
+/* line 353, ../sass/style.scss */
 .follow li {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
 }
-/* line 352, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .follow li .follow_image_container {
   float: left;
   height: 100%;
@@ -557,7 +564,7 @@ header p {
   background-size: cover;
   border-radius: 20px;
 }
-/* line 361, ../sass/style.scss */
+/* line 366, ../sass/style.scss */
 .follow li .follow_person_container {
   float: left;
   height: 100%;
@@ -565,7 +572,7 @@ header p {
   width: 170px;
   font-size: 12px;
 }
-/* line 367, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 .follow li .follow_person_container a {
   float: right;
   box-sizing: border-box;
@@ -574,92 +581,112 @@ header p {
   line-height: 20px;
   width: 20px;
   text-align: center;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #d9d9d9;
+  color: #999999;
 }
-/* line 368, ../sass/style.scss */
+/* line 373, ../sass/style.scss */
 .follow li .follow_person_container p {
   line-height: 20px;
   color: #D0CBBE;
 }
-/* line 369, ../sass/style.scss */
+/* line 374, ../sass/style.scss */
 .follow li .follow_person_container p:nth-of-type(1) {
   color: black;
 }
+/* line 378, ../sass/style.scss */
+.follow li:nth-child(1) .follow_image_container {
+  background-image: url("../assets/p2.jpg");
+}
+/* line 379, ../sass/style.scss */
+.follow li:nth-child(2) .follow_image_container {
+  background-image: url("../assets/p3.jpg");
+}
+/* line 380, ../sass/style.scss */
+.follow li:nth-child(3) .follow_image_container {
+  background-image: url("../assets/p4.jpg");
+}
+/* line 381, ../sass/style.scss */
+.follow li:nth-child(4) .follow_image_container {
+  background-image: url("../assets/p5.jpg");
+}
+/* line 382, ../sass/style.scss */
+.follow li:nth-child(5) .follow_image_container {
+  background-image: url("../assets/p6.jpg");
+}
 
 @media screen and (min-width: 800px) {
-  /* line 376, ../sass/style.scss */
+  /* line 387, ../sass/style.scss */
   header {
-    background-color: #FFFBF5;
+    background-color: white;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 800px) {
-  /* line 380, ../sass/style.scss */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  /* line 391, ../sass/style.scss */
   header {
-    background-color: #FFFBF5;
+    background-color: white;
   }
 
-  /* line 381, ../sass/style.scss */
+  /* line 392, ../sass/style.scss */
   .main {
     padding-right: 0px;
     background-color: #80A8CC;
   }
 
-  /* line 386, ../sass/style.scss */
+  /* line 397, ../sass/style.scss */
   .middle_container {
     margin-right: 0px;
     padding-right: 0px;
   }
 
-  /* line 391, ../sass/style.scss */
+  /* line 402, ../sass/style.scss */
   .left_container {
     height: 650px;
   }
 
-  /* line 395, ../sass/style.scss */
+  /* line 406, ../sass/style.scss */
   .right_container {
-    top: 950px;
+    top: 970px;
     bottom: 0;
     left: 0;
   }
-  /* line 399, ../sass/style.scss */
+  /* line 410, ../sass/style.scss */
   .right_container .trends {
     display: none;
   }
-  /* line 400, ../sass/style.scss */
+  /* line 411, ../sass/style.scss */
   .right_container .follow {
     position: static;
   }
 }
 @media screen and (max-width: 500px) {
-  /* line 405, ../sass/style.scss */
+  /* line 416, ../sass/style.scss */
   header {
-    background-color: #FFFBF5;
+    background-color: white;
   }
-  /* line 407, ../sass/style.scss */
+  /* line 418, ../sass/style.scss */
   header li {
     display: none;
   }
-  /* line 408, ../sass/style.scss */
+  /* line 419, ../sass/style.scss */
   header li:first-child {
     display: inline-block;
   }
-  /* line 410, ../sass/style.scss */
+  /* line 421, ../sass/style.scss */
   header form {
     display: none;
   }
 
-  /* line 414, ../sass/style.scss */
+  /* line 425, ../sass/style.scss */
   .left_container {
     display: none;
   }
 
-  /* line 415, ../sass/style.scss */
+  /* line 426, ../sass/style.scss */
   .right_container {
     display: none;
   }
 
-  /* line 416, ../sass/style.scss */
+  /* line 427, ../sass/style.scss */
   .middle_container {
     margin-left: 0px;
     margin-right: 0px;
@@ -667,7 +694,7 @@ header p {
     padding-right: 0px;
   }
 
-  /* line 419, ../sass/style.scss */
+  /* line 430, ../sass/style.scss */
   .statistic_container li {
     float: none;
     width: 100%;
