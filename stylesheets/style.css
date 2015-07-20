@@ -658,7 +658,7 @@ header p {
     position: static;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   /* line 416, ../sass/style.scss */
   header {
     background-color: white;
